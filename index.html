@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Chart.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+      integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Chart.js datalabel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"
+      integrity="sha512-R/QOHLpV1Ggq22vfDAWYOaMd5RopHrJNMxi8/lJu8Oihwi4Ho4BRFeiMiCefn9rasajKjnx9/fTQ/xkWnkDACg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="body">
+    <div class="container">
+      <header>
+        <div>
+          <p>My balance</p>
+          <p class="balanceAmount">$921.48</p>
+        </div>
+        <img class="logo" src="images/logo.svg" alt="logo" />
+      </header>
+
+      <main>
+        <h1>Spending - Last 7 days</h1>
+        <canvas id="myChart" style="width: 100%"></canvas>
+        <hr />
+        <div class="footer">
+          <div>
+            <p>Total this month</p>
+            <p class="footerAmount">$478.33</p>
+          </div>
+          <div>
+            <p class="footerPercent">+2.4%</p>
+            <p>from last month</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script type="module" src="index.js"></script>
+</html>

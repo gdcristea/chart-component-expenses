@@ -1,0 +1,145 @@
+/* Colors */
+:root {
+  --softRed: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --darkBrown: hsl(25, 47%, 15%);
+  --mediumBrown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --veryPaleOrange: hsl(33, 100%, 98%);
+  --white: hsl(100, 100%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--cream);
+}
+
+.container {
+  max-width: 540px;
+  width: 95%;
+  margin: 66px auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--white);
+  background-color: var(--softRed);
+  padding: 23px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.balanceAmount {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  margin-top: 4px;
+}
+
+/* Chart */
+main {
+  background-color: var(--veryPaleOrange);
+  border-radius: 10px;
+  padding: 24px 0px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--mediumBrown);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  color: var(--darkBrown);
+}
+
+/* Footer */
+hr {
+  margin: 24px 0;
+  height: 2px;
+  border-radius: 1px;
+  color: var(--cream);
+}
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.footerAmount {
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.footerPercent {
+  text-align: right;
+}
+
+.footerAmount,
+.footerPercent {
+  font-weight: 700;
+  color: var(--darkBrown);
+}
+
+@media (min-width: 540px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  header {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 27px 39px 25px 32px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+
+  .balanceAmount {
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 8px;
+  }
+
+  main {
+    border-radius: 20px;
+    padding: 32px 20px 40px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  hr {
+    margin: 32px 0;
+  }
+
+  .footer {
+    padding: 0px 20px;
+  }
+
+  .footerAmount {
+    font-size: 48px;
+    line-height: 63px;
+  }
+}
